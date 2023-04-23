@@ -1,0 +1,117 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --primary-light : #fff;
+    --secondary-loght : #e4e4e4;
+    --primary-dark : #262626;
+    --secondary-dark : #263238;
+    --editor-width : 80vw;
+}
+
+button {
+    outline: none;
+
+}
+
+.tools {
+    width : 20vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.editorpane {
+    width : var(--editor-width);
+    height: 100vh;
+    background-color: #f1f1f1;
+    overflow: scroll;
+}
+
+.editorpane .canvas {
+    position: absolute;
+    width:  var(--editor-width);
+    height: 100vh;
+
+}
+
+.editorpane .linkpane {
+    width: var(--editor-width);
+    height: 100vh;
+    position: absolute;
+    background-color: red;
+}
+
+
+.node{
+  /* background:#3F3F41; */
+  display: flex;
+  flex-flow: row;
+
+  min-width: 100px;
+  min-height:50px;
+  width:fit-content;
+  height:fit-content;
+  border-radius:5px;
+  position:absolute;
+  padding:0px;
+  overflow: none;
+}
+
+.node .head {
+    min-width: 100%;
+    height: 20px;
+    background-color: #3f8fdf;
+    border-radius:5px 5px 0 0 ;
+}
+
+.node .label {
+    color: white;
+    padding-left: 20px;
+}
+
+.node .body {
+    display: flex;
+    min-width: 100px;
+    background:#3F3F41;
+    border-radius:5px 5px ;
+}
+
+.node .contents{
+    width : 100px;
+}
+
+.node .inputSide {
+    padding: 20px 0;
+    display: flex;
+    width: 10px;
+    flex-flow: column;
+    height: 100%;
+   
+}
+
+.node .outputSide {
+    padding: 20px 0;
+    display: flex;
+    width: 10px;
+    flex-flow: column;
+    /* position: absolute; */
+    height: 100%;
+  
+}
+
+.node .socket {
+    border: 1px solid #585858;
+    border-radius: 50px;
+    background-color: aliceblue;
+    min-width: 10px;
+    min-height: 10px;
+    margin-top: 5px;
+}
+
+.node .socket:hover {
+    background-color: #ff9500;
+}

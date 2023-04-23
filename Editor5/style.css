@@ -1,0 +1,120 @@
+body {
+    font-size: 15pt;
+    padding: 0px;
+    overflow:hidden;
+    padding:0;
+    margin:0;
+}
+
+#mai{
+  position: relative;
+  width:200px;
+  height:200px;
+  overflow:none;
+  background:red;
+  display: block;
+  padding:0;
+  
+}
+
+.editor{
+  width:100%;
+  height:100vh;
+  overflow: scroll;
+  position: relative;
+  background:red;
+  display: grid;
+}
+
+.svg{
+  position:relative;
+  display: block;
+  /*width:100%;
+  height:100vh;*/
+  float:right;
+  align-items: stretch;
+  margin:0;
+}
+
+/*______________________NODE_______________________*/
+.node{
+  background:#3F3F41;
+  display: flex;
+  flex-flow: column;
+  min-width: 100px;
+  width:fit-content;
+  min-height:50px;
+  height:fit-content;
+  border-radius:5px;
+  position:absolute;
+  box-shadow:0px 8px 10px 1px;
+  padding:0px;
+}
+
+.node-headbar{
+  width:auto;
+  display:flex;
+  height:20px;
+  position:relative;
+  padding-top: 4px;
+  padding-left: 4px;
+  margin:0px;
+  border-radius: 3px solid;
+}
+
+.node-title{
+  color:lightgray;
+  position:relative;
+  margin:0px;
+  background:transparent;
+  font-size: 13px;
+}
+.node-controlbar{
+  display:flex;
+  flex-flow: column;
+  
+  margin:4px 4px;
+  padding:0px;
+  width:auto;
+  height:auto;
+}
+
+
+/*_____________________SOCKET______________________*/
+
+.socket-container{
+  display:flex;
+  position:relative;
+  align-items: center;
+  min-width:100px;
+  width: 100%; /* firwfox */
+  align-items: right; /*change according to input and output*/
+  min-height:0px;
+  height:20px;
+ /* background:yellow;*/
+  
+}
+
+.socket-label{
+  font-size: 9px;
+  font-family: sans-serif;
+  color: #8f8f8f;
+  width:100%;
+  align-items: right;
+ /* width: fit-content;*/
+  padding: 4px;
+  height:auto;
+/*  background:red;*/
+  margin:0px;
+}
+
+
+.socket{
+  width:15px;
+  height:15px;
+  background:green;
+  position:relative;
+  display: flex;
+  margin: 0px;
+  border-radius: 30%;
+}
